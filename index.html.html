@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        body {
+            font-family: 'Sports World' ;
+            text-align: center;
+            background-color: #000000;
+            color: #000000;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-top: 50px;
+            -webkit-text-stroke: 2px #550000; /* Adds a 2px border */
+            text-shadow: 2px 2px 0px rgba(151, 1, 1, 0.1); /* Adds a slight shadow for depth */
+        }
+        .sticker {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+        }
+        .sticker-left {
+            width: 150px;
+            height: 180px;
+            top: -5px; /* Positioning closer to the text */
+            left: 345px;
+            transform: rotate(0deg);
+        }
+        .sticker-right {
+            width: 70px;
+            height: 100px;
+            top: 30px; /* Positioning closer to the text */
+            right: 430px;
+            transform: rotate(0deg);
+        }
+        p {
+            font-size: 1.75rem;
+            margin-top: 20px;
+            color: #ffffff; /* A slightly darker shade for the paragraph text */
+            padding: 15px 20px; /* Padding for spacing inside the paragraph */
+            display: inline-block; /* Make the paragraph width fit the content */
+            max-width: 80%; /* Limit the paragraph width to avoid stretching */
+        }
+        .gif-container {
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .gif-container img {
+            width: 400px;
+            height: 300px;
+            border-radius: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .surprise-message {
+            font-size: 19px;
+            margin-top: 50px;
+            color: #ffffff;
+            display: none;
+        }
+        .reveal-button {
+            width: 130px;
+            height: 60px;
+            color: rgb(0, 0, 0);
+            border-radius: 10px;
+            font-family: cursive;
+            font-size: medium;
+            font-weight: 500;
+            transition: 0.5s;
+            overflow: hidden;
+            backdrop-filter: blur(15px);
+        }
+        .reveal-button:hover {
+            background-color: #a30000;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>
+        <img src="https://i.pinimg.com/originals/2a/d5/fc/2ad5fcdaa4dd5ed9e10491e95d0ebdcd.png" alt="Balloon Sticker" class="sticker sticker-left">
+        Happy Birthday!
+        <img src="https://e1.pxfuel.com/desktop-wallpaper/460/138/desktop-wallpaper-sukuna-jujutsu-kaisen-en-2021-anime-esttico-otaku-anime-720x1377-for-your-mobile-tablet.jpg" alt="Cake Sticker" class="sticker sticker-right">
+    </h1>
+    <p>Happy birthday to you our great solider!</p>
+
+    <div class="gif-container">
+        <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmx0ZGZ6czY2ZjFlZnJpNHM4Yzc2ZTRjenc1M3B0Y256dTZmMmJ2NCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5oOzvY2shzX4A/giphy.webp" alt="Happy Birthday Gif 1">
+        <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGtldDh3eHc4Y3FjNWtpOHlpcnRtdzlzNGgyYXltcjYxdXNhenJhdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xULW8IgzGxJaIBYWBO/giphy.webp" alt="Happy Birthday Gif 2">
+    </div>
+
+    <button class="reveal-button" onclick="showSurprise()">Over here!</button>
+
+    <div class="surprise-message" id="surpriseMessage">
+        Hope you have a wonderfull day ahead, we are so proud of you for coming this far. <br>
+        You are amazing, never let anyone put you down. <br> It is just another year, keep grinding soldier!
+    </div>
+
+    <script>
+        function showSurprise() {
+            document.getElementById('surpriseMessage').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
